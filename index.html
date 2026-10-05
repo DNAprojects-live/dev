@@ -143,7 +143,7 @@ textarea{width:100%;min-height:80px;resize:vertical}
 <div id="posts"></div></section>
 </main><aside id="side" class="card"></aside>
 <script>
-const BOT='';/* public HTTPS address of your bot, e.g. https://iron-bot.onrender.com. Leave empty only if the bot itself serves this page */
+const BOT='https://iron-bot.onrender.com';/* public HTTPS address of your bot, e.g. https://iron-bot.onrender.com. Leave empty only if the bot itself serves this page */
 const API=BOT||(location.protocol==='file:'||/\.(vercel\.app|github\.io|netlify\.app|pages\.dev)$/.test(location.hostname)?'':location.origin);
 (()=>{const m=/^#sid=([a-f0-9]+)/.exec(location.hash);if(m){try{localStorage.sid=m[1]}catch(_){}history.replaceState(null,'',location.pathname+location.search)}})();
 const tk=()=>{try{return localStorage.sid}catch(_){}};
